@@ -5,13 +5,20 @@ using UnityEngine;
 public class PlayerControler : MonoBehaviour
 {
    int playerHealth = 3; 
+
    public float playerSpeed = 5.5f;
+
    string text = "Hello world";
-   bool isGrounded = false;
+
    public SpriteRenderer sRender ;
+
    float horizontal;
+
    Rigidbody2D rBody; 
+
    public float jumpForce = 5.7f;
+
+   GroundSensor sensor;
 
 
 //int = numero entero
@@ -24,9 +31,17 @@ public class PlayerControler : MonoBehaviour
     void Start()
     {
         sRender = GetComponent<SpriteRenderer> ();
+
         rBody = GetComponent<Rigidbody2D>();
+
         playerHealth = 10;
+
+        sensor = GameObject.Find("GroundSensor").GetComponent<GroundSensor>();
+
         Debug. Log(text);
+
+        //GameObject.find = encuentra objetos por su nombre propio
+
         
     }
 
@@ -47,7 +62,7 @@ public class PlayerControler : MonoBehaviour
         sRender.flipX = false;
       }
 
-      if(Input.GetButtonDown("Jump"))
+      if(Input.GetButtonDown("Jump") && sensor.isGrounded) 
       {
         rBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
       }
