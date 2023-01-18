@@ -11598,6 +11598,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 5.5
+  sRender: {fileID: 0}
+  jumpForce: 5.7
 --- !u!212 &1193340177
 SpriteRenderer:
   m_ObjectHideFlags: 0
