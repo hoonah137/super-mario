@@ -20,6 +20,8 @@ public class PlayerControler : MonoBehaviour
 
    GroundSensor sensor;
 
+   private Animator anim; 
+
 
 //int = numero entero
 //float = nmero decimal
@@ -38,7 +40,10 @@ public class PlayerControler : MonoBehaviour
 
         sensor = GameObject.Find("GroundSensor").GetComponent<GroundSensor>();
 
+        anim = GetComponent<Animator>();
+
         Debug. Log(text);
+
 
         //GameObject.find = encuentra objetos por su nombre propio
 
@@ -55,16 +60,26 @@ public class PlayerControler : MonoBehaviour
       if (horizontal < 0 )
       {
         sRender.flipX = true;
+        anim.SetBool("IsRunning", true);
       }
 
       else if (horizontal > 0 )
       {
         sRender.flipX = false;
+       anim.SetBool("IsRunning", true);
+
+      }
+
+      else 
+      { 
+                anim.SetBool("IsRunning", false);
+
       }
 
       if(Input.GetButtonDown("Jump") && sensor.isGrounded) 
       {
         rBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        anim.SetBool("IsJumping", true);
       }
     }
 }
