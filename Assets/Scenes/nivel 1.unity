@@ -6227,7 +6227,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 158.04, y: -16.227854}
+  m_Offset: {x: 158.04, y: 62.558243}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6238,7 +6238,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 23.70639, y: 33.455708}
+  m_Size: {x: 23.70639, y: 191.0279}
   m_EdgeRadius: 0
 --- !u!61 &312480961
 BoxCollider2D:
@@ -6253,7 +6253,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -72.85319, y: -16.227854}
+  m_Offset: {x: -72.85319, y: 67.2588}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6264,7 +6264,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 22.706375, y: 33.455708}
+  m_Size: {x: 22.706375, y: 200.42903}
   m_EdgeRadius: 0
 --- !u!4 &312480962
 Transform:
@@ -10025,7 +10025,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456546741}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.92}
+  m_LocalPosition: {x: 0, y: 0, z: -379.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26531,6 +26531,7 @@ MonoBehaviour:
   playerSpeed: 5.5
   sRender: {fileID: 0}
   jumpForce: 7
+  anim: {fileID: 0}
 --- !u!212 &1193340177
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39254,7 +39255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1805769703}
   m_Layer: 0
-  m_Name: "\xBF?"
+  m_Name: bloques aereos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

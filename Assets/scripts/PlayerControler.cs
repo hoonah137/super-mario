@@ -20,7 +20,7 @@ public class PlayerControler : MonoBehaviour
 
    GroundSensor sensor;
 
-   private Animator anim; 
+   public Animator anim; 
 
 
 //int = numero entero
